@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Almacenamiento</title>
+  <link rel="stylesheet" href="lista.css">
+</head>
+<body>
+  <div class="contenedor">
+
+    <!-- Parte superior -->
+    <div class="encabezado">
+      <h1>Almacenamiento</h1>
+      <div class="actualizaciones">
+        <label for="fecha">Actualizaciones:</label>
+        <input type="date" id="fecha">
+      </div>
+    </div>
+
+    <!-- Lista de productos -->
+    <div class="lista-productos">
+    <div class="producto">
+      <h3>Producto A</h3>
+      <p>Cantidad: 20</p>
+      <p>Fecha de llegada: 2025-06-01</p>
+      <p>Fecha de expiración: 2025-07-01</p>
+    </div>
+    <div class="producto">
+      <h3>Producto B</h3>
+      <p>Cantidad: 20</p>
+      <p>Fecha de llegada: 2025-06-01</p>
+      <p>Fecha de expiración: 2025-07-01</p>
+    </div>
+    <div class="producto">
+      <h3>Producto C</h3>
+      <p>Cantidad: 20</p>
+      <p>Fecha de llegada: 2025-06-01</p>
+      <p>Fecha de expiración: 2025-07-01</p>
+    </div>
+      <!-- Puedes agregar más productos aquí -->
+    </div>
+
+    <!-- Parte inferior -->
+    <div class="inferior">
+      <div class="aviso">
+        <label for="aviso">Aviso:</label>
+        <textarea id="aviso" rows="3" placeholder="Escribe un aviso..."></textarea>
+      </div>
+      <div class="stock-total">
+        <label for="stock">Stock Total Restante:</label>
+        <input type="number" id="stock" readonly value="43">
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

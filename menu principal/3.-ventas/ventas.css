@@ -1,0 +1,60 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  margin: 30px;
+}
+
+.contenedor {
+  max-width: 900px;
+  margin: auto;
+  text-align: left;
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.bloque {
+  margin-bottom: 40px;
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+ul.resumen, ul.metricas {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul li {
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+canvas {
+  max-width: 100%;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.volver {
+  text-align: left;
+}
+
+.volver a {
+  text-decoration: none;
+  background-color: #444;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.volver a:hover {
+  background-color: #666;
+}

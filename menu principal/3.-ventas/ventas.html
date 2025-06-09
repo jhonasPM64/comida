@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ventas y Analítica</title>
+    <link rel="stylesheet" href="ventas.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="contenedor">
+    <h1>Ventas y Analítica</h1>
+
+    <!-- Resumen de ventas -->
+    <section class="bloque">
+        <h2>Resumen de ventas</h2>
+        <ul class="resumen">
+        <li>Producto A - Vendidos: 120</li>
+        <li>Producto B - Vendidos: 95</li>
+        <li>Producto C - Vendidos: 78</li>
+    </ul>
+    </section>
+
+    <!-- Análisis de tendencias -->
+    <section class="bloque">
+        <h2>Análisis de tendencias</h2>
+        <p>Producto más vendido: <strong>Producto A</strong></p>
+        <canvas id="graficoVentas" width="400" height="200"></canvas>
+    </section>
+
+    <!-- Métricas y estado -->
+    <section class="bloque">
+        <h2>Métricas y estado</h2>
+        <ul class="metricas">
+        <li>🔄 Reabastecimiento necesario: Producto B</li>
+        <li>📈 Rentabilidad: Alta</li>
+        <li>💰 Ganancias totales: $12,350</li>
+    </ul>
+    </section>
+
+    <!-- Botón de regreso -->
+    <div class="volver">
+        <a href="../menu.html">← Volver al menú</a>
+    </div>
+</div>
+
+<script>
+const ctx = document.getElementById('graficoVentas').getContext('2d');
+    new Chart(ctx, {
+        type: 'bar',
+        data: {
+        labels: ['Producto A', 'Producto B', 'Producto C'],
+        datasets: [{
+            label: 'Ventas por producto',
+            data: [120, 95, 78],
+            backgroundColor: ['#4CAF50', '#2196F3', '#FFC107']
+        }]
+    },
+    options: {
+        responsive: true,
+        scales: {
+            y: { beginAtZero: true }
+        }
+    }
+    });
+    </script>
+</body>
+</html>
