@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    height: 100vh; /* CORREGIDO: pantalla completa */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+form {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #ededed;
+    margin-top: -100px; /*separa el espacio de arriba*/
+    box-shadow: 0px 0px 45px #0006; /*le da sombra al formulario*/
+    border-radius: 5px;
+}
+.form-body{
+    display: flex;
+    flex-direction: column;
+    gap: 0px; /*separa el espacio de las lineas*/
+    margin-top: 50px;
+    padding: 0px 100px; /*separa el espacio de arriba*/
+}
+input[type="password"] {
+    border: none;
+    border-left: 2px solid black;/*agrega un margen de otro color a la casilla de texbox*/
+    padding: 7px 10px; /*aumenta el borde de imagen*/
+}
+input[type="submit"]{
+    margin-bottom: 40px ;
+    margin-left: 150px;
+    padding: 10px 20px;
+    width: 110px; /*controla el ancho*/
+    cursor: pointer;
+}
+.links{
+    display: flex;/*esto alinea verticalmente los elementos*/
+    flex-direction: row; /*esto alinea en horizontal los elementos*/
+    align-items: center;
+    justify-content: space-between; /*esto da espacio a los elementos horizontales*/
+    /*gap: 5px; /*especifica el espacio entre las lineas*/
+    width: 100%;
+    padding: 0 40px;
+}
+.links a{
+    color: black;
+    text-decoration: none;
+    margin-bottom: 45px;
+    margin-right: 175px;
+
+}

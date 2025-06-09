@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Menú Principal</title>
+  <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+  <div class="contenedor">
+
+    <!-- 1. Panel de Inventario -->
+    <div class="panel">
+      <h2>Panel de Inventario</h2>
+      <div class="contenido">
+        <img src="inventario.png" alt="Inventario">
+        <div class="info">
+          <p><strong>Total de productos:</strong> 120</p>
+          <p><strong>Stock bajo:</strong> 8</p>
+          <textarea readonly>Producto A\nProducto B\nProducto C</textarea>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. Panel de Almacenamiento -->
+    <div class="panel">
+      <h2>Almacenamiento</h2>
+      <div class="contenido">
+        <img src="almacenamiento.png" alt="Almacenamiento">
+        <div class="info">
+          <p><strong>Productos actuales:</strong> 230</p>
+          <button onclick="location.href='lista.html'">Lista de artículos</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3. Panel de Administración -->
+    <div class="panel">
+      <h2>Administrar Almacenamiento</h2>
+      <div class="contenido">
+        <img src="admin.png" alt="Administrar">
+        <div class="info">
+          <label><strong>Últimos cambios:</strong></label>
+          <textarea readonly>Ingreso: Producto X\nSalida: Producto Y</textarea>
+          <button onclick="location.href='cambios.html'">Cambios</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4. Panel de Ventas -->
+    <div class="panel">
+      <h2>Ventas y Analítica</h2>
+      <div class="contenido">
+        <img src="ventas.png" alt="Ventas">
+        <div class="info">
+          <label><strong>Ventas de hoy:</strong></label>
+          <textarea readonly>15 artículos vendidos</textarea>
+          <button onclick="location.href='ventas.html'">Venta de artículos</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
